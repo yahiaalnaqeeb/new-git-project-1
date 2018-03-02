@@ -89,8 +89,9 @@
 --------------------------------------------------------------
   $ Git Tag  -a    # to add some note ber numver of commit
                    #.. addafter -a shotcut tag
-  $ git log --decorate   # to show the tag
-  
+  $ git log --decorate      # to show the tag
+  $ git tag -d v1.0          # to remove tag with name v1.0
+  $ git tag -a v1.0 a87984    # add tag to old Byusgin SHA 
 
 
 
