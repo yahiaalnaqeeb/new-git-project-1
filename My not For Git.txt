@@ -1,0 +1,138 @@
+
+---------------------------------------------------------------------------
+----------- «÷«›… ⁄„·Ì«  «·Ï «·„” Êœ⁄ »«” Œœ«„-----------------------------
+
+- $ git add  
+      #for adding file form working directory to the staging index
+	 #Example for using it
+	  $ git add index.html              #Move it to Staging index
+	  $ git rm --cached index.html      #ignor Moving file to staging
+	  $ git add css/app.css js/app.js   #Move To files 
+	  $ git .                           #this Move all Files to Staging 
+	  $ git add pages/*                 #Move all file in Folder pages
+      $ git add pages/.                 #same job for : git add pages/* 
+    -----------------------------------------------------------------------
+- $ git commit 
+       #for Moving files from staging index into repository and save them there
+       #when you do it ,will appare your edior to see the file that changed last
+	   #.. So You will  Adding Name for your Chage or date just to know it later
+	   #.. then save file and close all editor to save the change in git
+	   # Important  to use 'git add .' befor update
+	   
+- $ git commit -m "Initial commit" 
+	   #if you don't need to open Edito and wite and save and close just 
+ 	   #...Do like this  $ git commit -m "MyPoint33AfterAddJs"
+	   # Important  to use 'git add .' befor update
+
+- $ git commit -a
+       # this when you update file and don't need to use  git add  for file again
+	   #  Not Important  to use 'git add .' befor update
+	  
+
+	-----------------------------------------------------------------------------------
+	
+	
+- $ git log   # it show history of all uodating of project
+    
+	$ git log --oneline    # get the name onlay of all Last Keek change 
+	$ git log -p fdf5493   # For Select one Sh you keep it SH					   
+	$ git log -s           # show  commit , Author , Date And Name of Comment For All 
+	
+	$ git log -p           # how history update with deatial and what you add to file 
+	                       #..And Content of file 					   
+	$ git log --stat       # show history with number of add or delete file 
+	                       #...also number of lines  (add  or delete )
+	
+	$ git log -p --stat    # Result both of obove comand 
+
+      j √Ê ? ··«‰ ﬁ«· ··√”›· „ﬁœ«— ”ÿ— Ê«Õœ ›Ì ﬂ· „—…
+      d ··«‰ ﬁ«· „ﬁœ«— ‰’› ’›Õ… „‰ «·‘«‘…
+      f ··«‰ ﬁ«· „ﬁœ«— ’›Õ… ﬂ«„·… „‰ «·‘«‘… ·· „—Ì— ·√⁄·Ï° «÷€ÿ ⁄·Ï   
+	  k √Ê ? ··«‰ ﬁ«· ··√⁄·Ï „ﬁœ«— ”ÿ— Ê«Õœ ›Ì ﬂ· „—…
+      u ··«‰ ﬁ«· „ﬁœ«— ‰’› ’›Õ… „‰ «·‘«‘…
+      b ··«‰ ﬁ«· „ﬁœ«— ’›Õ… ﬂ«„·… „‰ «·‘«‘…
+      «÷€ÿ ⁄·Ï q „‰ √Ã· «·Œ—ÊÃ „‰ «·”Ã· («·—ÃÊ⁄ ≈·Ï „ÊÃÂ «·√Ê«„— «·«⁄ Ì«œÌ)
+	-------------------------------------------------------------------------------
+	$ git show         # return last Commit Added to Git
+	$ git show fdf5493 # Retuen  the specifa Sha that we add to it
+	-------------------------------------------------------
+- $ git diff 
+    # when we make any change befor commit show us tow line "-" old line "+" new line
+    # so it,s show both old new new thing that we updated in any documents
+    # Seems git log -p
+	
+	------------------------------------------
+- .gitignore 
+    # create New File with .gitignore and include all file that
+	#.. we don't want them to apear in git status or projwct	
+	
+	# · Ã«Â· «·’Ê— „‰  Ê⁄ »Ì «‰ ÃÌ ‰ﬂ » ›Ì «·„·›  *.png	  
+	##Ì„ﬂ‰ «” Œœ«„ «·”ÿÊ— «·Œ«·Ì… ·⁄„· „”«›« 
+    # - Ì„Ì“ «·”ÿ— ﬂ ⁄·Ìﬁ
+    * - Ìÿ«»ﬁ 0 √Ê «·„“Ìœ „‰ «·Õ—Ê›
+    ? - Ìÿ«»ﬁ Õ—›« Ê«Õœ«
+    [abc] - Ìÿ«»ﬁ a √Ê b √Ê √Ê c
+    ** - Ìÿ«»ﬁ «·√œ·… «·„ œ«Œ·… - „ ÿ«»ﬁ«  a/**/z
+   a/z
+   a/b/z
+   a/b/c/z
+
+   ·–« ≈–« ﬂ«‰  «·‹ 50 ’Ê—… »√ﬂ„·Â« ÂÌ
+   ’Ê— JPEG ›Ì „Ã·œ \"«·⁄Ì‰« \"°
+  ›Ì„ﬂ‰‰« ≈÷«›… «·”ÿ— «· «·Ì ≈·Ï 
+  .gitignore
+  ·Ã⁄· Git Ì Ã«Â· «·‹ 50 ’Ê—… »√ﬂ„·Â«.
+   ‰”Œœ„ «·«„— «”›· „»«‘—Â
+  img/*.jpg
+  
+--------------------------------------------------------------
+--------------------------------------------------------------
+  $ Git Tag  -a    # to add some note ber numver of commit
+                   #.. addafter -a shotcut tag
+  $ git log --decorate   # to show the tag
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+	
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+
+
+-------------------------------------------------------------
+-------------------------------- Other Note -----------------
+
+$ git rm
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+
+	
