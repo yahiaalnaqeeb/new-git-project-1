@@ -93,8 +93,30 @@
   $ git tag -d v1.0          # to remove tag with name v1.0
   $ git tag -a v1.0 a87984    # add tag to old Byusgin SHA 
 
+------------------------------------------------------------
+-----------------------------------------------------------
+ $ git branch            # show all previous branch for projects
+ $ git branch branch1    # ceate new Branch or called branch1  for projects
+ $ git checkout sidebar  # change head to branch sidebar
+ $ git branch -d sidebar # remove Brach called  sidebar after you turn to other
+ $ git branch -D sidebar # remove Brach called  sidebar Even you use it  or have some commit
+ $ git branch alt-sidebar-loc 42a69f
+                         # create Branch called alt-sidebar-loc
+						 #..and have point to 42a69f commit
 
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+ 
+ $ git log --oneline --decorate --graph --all  # Show All Update From All Branch
+ $ git merge footer   # that will megge footer branch to Main branch that 
+                      #.. we are in it working  also footer will saty as last
 
+ $ git reset --hard HEAD^  # to Undo Merge that you Do Aslo Do more one step
+                           #.. delete commit in ordered one after one
+ $ git commit --amend      # alter the most-recent commit
+  $ git revert  ac3f78     # delete things that done in this commit
+ 
+                             
 
 
 
