@@ -34,9 +34,10 @@
 	
 - $ git log   # it show history of all uodating of project
     
-	$ git log --oneline    # get the name onlay of all Last Keek change 
-	$ git log -p fdf5493   # For Select one Sh you keep it SH					   
-	$ git log -s           # show  commit , Author , Date And Name of Comment For All 
+	$ git log --oneline          # get the name onlay of all Last Keek change 
+	$ git log 10ea3fe --oneline  # git all commit from First to this commit
+	$ git log -p fdf5493         # For Select one Sh you keep it SH					   
+	$ git log -s                 # show  commit , Author , Date And Name of Comment For All 
 	
 	$ git log -p           # how history update with deatial and what you add to file 
 	                       #..And Content of file 					   
@@ -44,7 +45,7 @@
 	                       #...also number of lines  (add  or delete )
 	
 	$ git log -p --stat    # Result both of obove comand 
-
+  
       j √Ê ? ··«‰ ﬁ«· ··√”›· „ﬁœ«— ”ÿ— Ê«Õœ ›Ì ﬂ· „—…
       d ··«‰ ﬁ«· „ﬁœ«— ‰’› ’›Õ… „‰ «·‘«‘…
       f ··«‰ ﬁ«· „ﬁœ«— ’›Õ… ﬂ«„·… „‰ «·‘«‘… ·· „—Ì— ·√⁄·Ï° «÷€ÿ ⁄·Ï   
@@ -113,15 +114,45 @@
 
  $ git reset --hard HEAD^  # to Undo Merge that you Do Aslo Do more one step
                            #.. delete commit in ordered one after one
+	git reset #have 3 parmeters 
+	1- git reset --mixed HEAD~1 OR  git reset HEAD~1  #take head to working Directory
+	2- git reset --soft HEAD~1    ##take head to staging index
+	3- git reset --hard HEAD~1    ##take head to Trach
+						   
+						   
  $ git commit --amend      # alter the most-recent commit
-  $ git revert  ac3f78     # delete things that done in this commit
+ $ git revert  ac3f78     # delete things that done in this commit
  
-                             
+ if we have this commit is : 9ec05ca  and the head refer to it then se call them as 
+	- HEAD^     or   HEAD~1   or  HEAD~      #call     father   to commit 9ec05ca
+	- HEAD^^    or   HEAD~2   or             #call grandfather  to  commit 9ec05ca 
+    - HEAD^^^   or   HEAD~3   or             #call father of grandfather to  9ec05ca   
+    --------------------------------------------------------------------------------
+	# Deferent between  ^  and  ~   So  deference appear when we make merege will hapend
+	 -  ⁄‰œ «‰‘«¡  À»Ì  „‰ «·œ„⁄  ÌﬂÊ‰ ·· À»Ì  «·ÃœÌœ Ê«·œ«‰ «Ê «»ÊÌ‰
+     1- ^    ··≈‘«—… «·Ï «·√» «·«Ê· «·Œ«’ »«· À»Ì 
+	 2- ^2   Ì‘Ì— «·Ï «·„—Ã⁄ «·Ï «·√» «·À«‰Ì 
+	 
+	 - «·√» «·«Ê· ÂÊ «·›—⁄ «·–Ì ﬂ‰  ›ÌÂ ⁄‰œ ⁄„· «·«„—  ﬁÌ  „Ì—Ã
+	 - «·√» «·À««‰Ì  ÂÊ Ì⁄ »— «·›———⁄ «·„œ„Ã
+	 
+	 # ⁄‰œ Õ”«» «· À»Ì «   ‰·«ÕŸ «· «·Ì
+	 - ·« Õ ”» «· À»Ì« «  «·–Ì Ã—  ›Ì «·›—Ê⁄ «·«Œ—Ï ﬁ»· «·œ„Ã -„ÿ»ﬁ
+	 1- ·«ÌÕ ”» «· Revert
+	 2- ·« Ì Õ”» «·  Merge 
+	 
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------	
 
+   - git remote  # manage remote repository
+   - git push    # send updates to remote
+   - git pull    # retrieve updates from remote
 
-
-
-
+    # Create connect with my remote project by this line after you create  "new-git-project-1"
+     $ git remote add origin https://github.com/yahiaalnaqeeb/new-git-project-1.git
+    
+	# to check connection we use blew line
+	$ git remote -v
 
 
 
